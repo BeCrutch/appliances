@@ -1,7 +1,32 @@
-* {
-  margin: 0;
-}
-
-body {
-  $project-green: $green;
+.hamburger-line {
+  display: flex;
+  width: 50px;
+  
+  @media (min-width: 992px) {
+    
+  }
+  
+  &__item {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background-color: $project-green;
+    
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $project-green;
+    }
+    
+    &::before {
+      top: -12px;
+    }
+    
+    &::after {
+      bottom: -12px;
+    }
+  }
 }

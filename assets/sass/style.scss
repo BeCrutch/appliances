@@ -1,6 +1,14 @@
+//Reset style
+@import "reser";
 
+//Bootstrap 5 [grid]
 @import 'node_modules/bootstrap/scss/bootstrap-grid';
 
+//Variables for project
 @import "variables";
 
+//Common styles
 @import "common";
+
+//Components
+@import "components/header";
