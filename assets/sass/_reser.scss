@@ -49,6 +49,10 @@ body {
   line-height: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -214,6 +218,8 @@ select,
 textarea {
   font-size: 100%; /* 1 */
   margin: 0; /* 2 */
+  border: none;
+  outline: none;
   vertical-align: baseline; /* 3 */
   *vertical-align: middle; /* 3 */
 }
@@ -355,6 +361,8 @@ textarea {
 }
 
 img {
+  max-width: 100%;
+  
   vertical-align: middle;
 }
 
